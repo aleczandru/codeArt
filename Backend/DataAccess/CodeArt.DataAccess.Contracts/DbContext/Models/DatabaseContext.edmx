@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="CodeArt.DataAccess.Contracts.DbContext.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Files">
+          <Key>
+            <PropertyRef Name="FileId" />
+          </Key>
+          <Property Name="FileId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="OriginalFileName" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="StorageFileName" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="DisplayFileName" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="CreationDate" Type="datetime" Nullable="false" />
+          <Property Name="DeletionDate" Type="datetime" />
+          <Property Name="CreatedBy" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="FileTypeId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="FileTypes">
+          <Key>
+            <PropertyRef Name="FileTypeId" />
+          </Key>
+          <Property Name="FileTypeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Path" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="CreationDate" Type="datetime" Nullable="false" />
+          <Property Name="DeletionDate" Type="datetime" />
+          <Property Name="CreatedBy" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_dbo_Files_dbo_FileTypes_FileTypeId">
+          <End Role="FileTypes" Type="Self.FileTypes" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Files" Type="Self.Files" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FileTypes">
+              <PropertyRef Name="FileTypeId" />
+            </Principal>
+            <Dependent Role="Files">
+              <PropertyRef Name="FileTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="CodeArtDataAccessContractsDbContextStoreContainer">
+          <EntitySet Name="Files" EntityType="Self.Files" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FileTypes" EntityType="Self.FileTypes" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_dbo_Files_dbo_FileTypes_FileTypeId" Association="Self.FK_dbo_Files_dbo_FileTypes_FileTypeId">
+            <End Role="FileTypes" EntitySet="FileTypes" />
+            <End Role="Files" EntitySet="Files" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CodeArt.DataAccess.Contracts.DbContext" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="DatabaseContext" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Files" EntityType="CodeArt.DataAccess.Contracts.DbContext.File" />
+          <EntitySet Name="FileTypes" EntityType="CodeArt.DataAccess.Contracts.DbContext.FileType" />
+          <AssociationSet Name="FK_dbo_Files_dbo_FileTypes_FileTypeId" Association="CodeArt.DataAccess.Contracts.DbContext.FK_dbo_Files_dbo_FileTypes_FileTypeId">
+            <End Role="FileType" EntitySet="FileTypes" />
+            <End Role="File" EntitySet="Files" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="File">
+          <Key>
+            <PropertyRef Name="FileId" />
+          </Key>
+          <Property Name="FileId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="OriginalFileName" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="StorageFileName" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="DisplayFileName" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DeletionDate" Type="DateTime" Precision="3" />
+          <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FileTypeId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="FileType" Relationship="CodeArt.DataAccess.Contracts.DbContext.FK_dbo_Files_dbo_FileTypes_FileTypeId" FromRole="File" ToRole="FileType" />
+        </EntityType>
+        <EntityType Name="FileType">
+          <Key>
+            <PropertyRef Name="FileTypeId" />
+          </Key>
+          <Property Name="FileTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Path" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DeletionDate" Type="DateTime" Precision="3" />
+          <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Files" Relationship="CodeArt.DataAccess.Contracts.DbContext.FK_dbo_Files_dbo_FileTypes_FileTypeId" FromRole="FileType" ToRole="File" />
+        </EntityType>
+        <Association Name="FK_dbo_Files_dbo_FileTypes_FileTypeId">
+          <End Type="CodeArt.DataAccess.Contracts.DbContext.FileType" Role="FileType" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="CodeArt.DataAccess.Contracts.DbContext.File" Role="File" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FileType">
+              <PropertyRef Name="FileTypeId" />
+            </Principal>
+            <Dependent Role="File">
+              <PropertyRef Name="FileTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CodeArtDataAccessContractsDbContextStoreContainer" CdmEntityContainer="DatabaseContext">
+          <EntitySetMapping Name="Files">
+            <EntityTypeMapping TypeName="CodeArt.DataAccess.Contracts.DbContext.File">
+              <MappingFragment StoreEntitySet="Files">
+                <ScalarProperty Name="FileTypeId" ColumnName="FileTypeId" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="DeletionDate" ColumnName="DeletionDate" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="DisplayFileName" ColumnName="DisplayFileName" />
+                <ScalarProperty Name="StorageFileName" ColumnName="StorageFileName" />
+                <ScalarProperty Name="OriginalFileName" ColumnName="OriginalFileName" />
+                <ScalarProperty Name="FileId" ColumnName="FileId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FileTypes">
+            <EntityTypeMapping TypeName="CodeArt.DataAccess.Contracts.DbContext.FileType">
+              <MappingFragment StoreEntitySet="FileTypes">
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="DeletionDate" ColumnName="DeletionDate" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="Path" ColumnName="Path" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="FileTypeId" ColumnName="FileTypeId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

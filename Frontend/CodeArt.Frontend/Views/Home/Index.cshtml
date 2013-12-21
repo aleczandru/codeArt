@@ -1,0 +1,66 @@
+﻿@model dynamic
+
+@{
+    ViewBag.Title = "title";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>CORS ENABLED</h2>
+<input type="text" id="Input" />
+<button id="getPatiens">Get Ion</button>
+<button id="postIon">Post Ion</button>
+<pre id="output">
+</pre>
+
+<pre id="output2">
+</pre>
+<script src="~/Scripts/jquery-2.0.3.js"></script>
+<script>
+    $(function () {
+        GetIon();
+        PostIon();
+    });
+
+    function PostIon() {
+        var url = "http://localhost:3439/api/Membership/Register";
+
+        $("#postIon").click(postIon);
+       
+        function postIon() {
+            var userRegistrationModel = {
+                userName: $("#Input").val(),
+                password: "AlexandruAntonss",
+                confirmPassword: "AlexandruAnton",
+                firstName: "ion",
+                lastName: "ion",
+                birthDate: "1/1/0001",
+                gender: 1,
+                IsTermsAndConditionChecked: "true"
+            };
+
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: JSON.stringify(userRegistrationModel),
+                contentType: "application/json"
+            }).always(showResponse);
+        }
+
+        var showResponse = function (object) {
+            $("#output2").text(JSON.stringify(object, null, 4));
+        };
+    }
+    function GetIon() {
+        var getIon = function () {
+            $.get(url).always(showResponse);
+        };
+
+        var showResponse = function (object) {
+            $("#output").text(JSON.stringify(object, null, 4));
+        };
+
+        var url = "http://localhost:3439/api/Membership/GetIon";
+
+        $("#getPatiens").click(getIon);
+    }
+</script>
