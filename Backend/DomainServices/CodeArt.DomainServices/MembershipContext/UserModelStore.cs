@@ -1,10 +1,11 @@
 ﻿using CodeArt.Common.Constants;
 using CodeArt.Common.Contracts.Wrappers;
 using CodeArt.Common.Wrappers;
+using CodeArt.DomainServices.Contracts.MembershipContext;
 using CodeArt.DomainServices.Contracts.Models.Membership;
 using Microsoft.AspNet.Identity.EntityFramework;
 
-namespace CodeArt.WebApi.Context
+namespace CodeArt.DomainServices.MembershipContext
 {
     public class UserModelStore : UserStore<UserModel>
     {

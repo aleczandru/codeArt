@@ -66,9 +66,6 @@
     <Compile Include="App_Start\MapperConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Attributes\ValidationAttribute\ValidateAttribute.cs" />
-    <Compile Include="Context\DbContext.cs" />
-    <Compile Include="Context\IDbContext.cs" />
-    <Compile Include="Context\UserModelStore.cs" />
     <Compile Include="Controllers\MembershipController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

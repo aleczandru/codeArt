@@ -45,6 +45,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MembershipContext\IDbContext.cs" />
     <Compile Include="Models\FileManager\FileManagerModel.cs" />
     <Compile Include="Models\FileManager\FileTypeModel.cs" />
     <Compile Include="Models\Membership\UserModel.cs" />
