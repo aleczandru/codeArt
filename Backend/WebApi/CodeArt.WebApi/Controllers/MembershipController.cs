@@ -18,6 +18,7 @@ namespace CodeArt.WebApi.Controllers
             ConfigureUserManager();
         }
 
+
         [AllowAnonymous]
         [HttpPost]
         [Validate]

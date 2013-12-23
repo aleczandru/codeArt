@@ -1,0 +1,28 @@
+﻿/*General*/
+.overflow {
+    overflow: hidden;
+}
+
+.reset-padding-left {
+    padding-left: 0;
+}
+/*Header*/
+body {
+    margin-top: 70px;
+}
+
+/*Register*/
+@media (min-width: 992px){
+    #register .modal-dialog {
+        width: 50%;
+        margin-top: 5%;
+    }
+}
+/*Profile*/
+#header-search {
+    margin-top: 10px;
+}
+
+.btn-custom-padding {
+    padding: 8px 12px;
+}
