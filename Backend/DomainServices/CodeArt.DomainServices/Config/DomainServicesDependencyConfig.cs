@@ -10,7 +10,7 @@ using Microsoft.AspNet.Identity;
 namespace CodeArt.DomainServices.Config
 {
     public static class DomainServicesDependencyConfig
-    {
+    { 
         private static IDependencyContainerWrapper dependencyContainer;
         public static IDependencyContainerWrapper DependencyContainer
         {
