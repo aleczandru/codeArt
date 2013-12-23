@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="../css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="../css/main.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="login">
+        <header class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <section class="navbar-header">
+                    <a href="#" class="navbar-brand"> <img src="../images/logo.png" alt="logo" /></a>
+                </section>
+            </div>
+        </header>
+        <article class="container">
+            <section class="col-md-6">
+                <form role="form">
+                    <div class="form-group">
+                        <h2>Login</h2>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="E-MAIL" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Password" class="form-control" />
+                    </div>
+                    <div class="form-group overflow">
+                        <button type="submit" class="btn btn-primary col-xs-12 col-sm-5 col-md-5 ">Login</button>
+                        <em class="col-md-2 col-sm-2 col-xs-12 text-center">or</em>
+                        <a href="#register" data-toggle="modal" class="btn btn-primary col-sm-5 col-md-5 col-xs-12">Register</a>
+                    </div>
+                    <div class="form-group overflow">
+                        <label class="pull-left checkbox-inline">
+                            <input type="checkbox" /><em>Keep me logged in!</em>
+                        </label>
+                        <label class="pull-right">
+                            <a href="#"><em>Forgot Password?</em></a>
+                        </label>
+                    </div>
+                </form>
+            </section>
+            <section class="col-md-6">
+                <form role="form">
+                    <div class="form-group">
+                        <h2>Login With</h2>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary form-control">Facebook</button>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-danger form-control">Google+</button>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-info form-control">Twitter</button>
+                    </div>
+                </form>
+            </section>
+            <section class="modal fade" id="register" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <a href="#" class="close" data-dismiss="modal">&times;</a>
+                            <h3>Register</h3>
+                        </div>
+                        <div class="modal-body overflow">
+                            <form role="form">
+                                <div class="form-group col-md-6 reset-padding-left">
+                                    <label class="sr-only">First Name</label>
+                                    <input type="email" class="form-control" placeholder="First Name">
+                                </div>
+                                <div class="form-group col-md-6 reset-padding-left">
+                                    <label class="sr-only">Last Name</label>
+                                    <input type="password" class="form-control" placeholder="Last Name">
+                                </div>
+                                <div class="form-group col-md-11 col-xs-10 reset-padding-left">
+                                    <label class="sr-only">E-Mail</label>
+                                    <input type="email" class="form-control" placeholder="E-Mail">
+                                </div>
+                                <div class="form-group col-md-1 col-xs-2 reset-padding-left">
+                                    <img src="../images/error.png" class="center-block" alt="error" />
+                                </div>
+                                <div class="form-group col-md-11 col-xs-10 reset-padding-left">
+                                    <label class="sr-only">Password</label>
+                                    <input type="password" class="form-control" placeholder="Password">
+                                </div>
+                                <div class="form-group col-md-1 col-xs-2 reset-padding-left">
+                                    <img src="../images/password_stregth_low.png" class="center-block" alt="password-stregth" />
+                                </div>
+                                <div class="form-group col-md-11 col-xs-10 reset-padding-left">
+                                    <label class="sr-only">Confirm Password</label>
+                                    <input type="password" class="form-control" placeholder="Confirm Password">
+                                </div>
+                                <div class="form-group col-md-1 col-xs-2 reset-padding-left">
+                                    <img src="../images/ok.png" class="center-block" alt="password-stregth" />
+                                </div>
+                                <div class="form-group col-xs-12 reset-padding-left">
+                                    <h4>Birthday</h4>
+                                </div>
+                                <div class="form-group col-md-4 col-xs-12 reset-padding-left">
+                                    <select class="form-control">
+                                        <option selected="selected">Year</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-4 col-xs-12 reset-padding-left">
+                                    <select class="form-control">
+                                        <option selected="selected">Month</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-4 col-xs-12 reset-padding-left">
+                                    <select class="form-control">
+                                        <option selected="selected">Day</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-12 col-xs-12 reset-padding-left">
+                                    <h4>Gender</h4>
+                                </div>
+                                <div class="form-group col-md-12 col-xs-12 reset-padding-left">
+                                    <div class="radio-inline">
+                                        <label>
+                                            <input type="radio" name="femaleGender" id="femaleGender" value="Male">
+                                            Male
+                                        </label>
+                                    </div>
+                                    <div class="radio-inline">
+                                        <label>
+                                            <input type="radio" name="femaleGender" id="femaleGender" value="Female">
+                                            Female
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-12 col-xs-12 reset-padding-left">
+                                    <em>By clicking sign up you agree to our <a href="#">Terms & Condititons</a></em>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-success" data-dismiss="modal">Cancel</button>
+                            <button class="btn btn-success">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </div>
+    <script src="../../Scripts/jquery-2.0.3.js"></script>
+    <script src="../../Scripts/bootstrap.js"></script>
+</body>
+</html>
