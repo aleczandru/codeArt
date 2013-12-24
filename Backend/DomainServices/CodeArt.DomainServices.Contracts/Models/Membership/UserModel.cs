@@ -7,8 +7,8 @@ namespace CodeArt.DomainServices.Contracts.Models.Membership
 {
     public class UserModel : IdentityUser
     {
-        [EmailAddress]
-        [Required]
+        [EmailAddress(ErrorMessage = "You must provide a valid e-mail address")]
+        [Required(ErrorMessage = "The e-mail address is required")]
         public override string UserName { get; set; }
         [Required]
         [NotMapped]

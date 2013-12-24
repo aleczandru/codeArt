@@ -12,33 +12,131 @@
     <div id="profile">
         <header class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
-                <section class="navbar-header col-md-2">
-                    <button class="btn btn-info btn-custom-padding navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="glyphicon glyphicon-align-justify"></span></button>
-                    <a href="#" class="navbar-brand"> <img src="../images/logo.png" alt="logo" /></a>
+                <section class="navbar-header col-md-2 col-sm-2">
+                    <button class="btn btn-info btn-custom-header-collapsed navbar-toggle reset-margin-right" data-toggle="collapse" data-target=".navbar-collapse"><span class="glyphicon glyphicon-align-justify"></span></button>
+                    <a href="#" class="navbar-brand  reset-padding-left"> <img src="../images/logo.png" alt="logo" /></a>
                 </section>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right col-md-10">
-                        <li class="nav col-md-7 hidden-xs hidden-sm" id="header-search">
+                <div class="navbar-collapse collapse" id="menu">
+                    <ul class="nav navbar-nav navbar-right col-md-10 col-sm-10 reset-padding-rigth">
+                        <li class="col-md-7 col-sm-7 col-xs-12" id="header-search">
                             <div class="input-group">
-                                <span class="input-group-addon inpu">$</span>
+                                <div class="input-group-btn">
+                                    <button class="btn btn-info dropdown-toggle hide-toggle" data-toggle="dropdown"><i class="fa fa-chevron-down"></i></button>
+                                    <ul class="dropdown-menu hide-toggle">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
                                 <input type="text" class="form-control" placeholder="Search...">
                                 <span class="input-group-btn">
                                     <button class="btn btn-info" type="button"><i class="fa fa-search"></i></button>
                                 </span>
                             </div>
                         </li>
-                        <li class="nav col-md-1"><a href=""><i class="fa fa-bell-o fa-2x"></i></a></li>
-                        <li class="nav col-md-1"><a href=""><i class="fa fa-envelope-o fa-2x"></i></a></li>
-                        <li class="nav col-md-1"><a href=""><i class="fa fa fa-user fa-2x"></i></a></li>
-                        <li class="nav col-md-1"><a href=""><i class="fa fa fa-users fa-2x"></i></a></li>
-                        <li class="nav col-md-1"><a href=""><i class="fa fa-wrench fa-2x"></i> </a></li>
+                        <li class="nav col-md-1 col-sm-1 col-xs-2 dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-wrench fa-2x"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Another action</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li><a href="#">Action</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li><a href="#">Another action</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li><a href="#">One more separated linksssssssssssssssssssssssssssssssssd</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav col-md-1 col-sm-1 col-xs-2 dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa fa-users fa-2x"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li><a href="#">One more separated linksssssssssssssssssssssssssssssssssd</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav col-md-1 col-sm-1 col-xs-2 dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa fa-user fa-2x"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li><a href="#">One more separated linksssssssssssssssssssssssssssssssssd</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav col-md-1 col-sm-1 col-xs-2 dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope-o fa-2x"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li><a href="#">One more separated linksssssssssssssssssssssssssssssssssd</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav col-md-1 col-sm-1 col-xs-2 dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell-o fa-2x"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li><a href="#">One more separated linksssssssssssssssssssssssssssssssssd</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
         </header>
-        <article class="container"></article>
+        <article class="container reset-padding-left reset-padding-right">          
+            <section class="col-sm-12">
+                <div class="well overflow reset-padding-left reset-padding-right">
+                    <div class="col-xs-12 col-sm-6">
+                        <p><img src="../images/avatar.png" alt="avatar" class="img-thumbnail img-responsive" /></p>
+                        <p class="text-center"><strong>Nistor Alexandru</strong></p>
+                    </div>
+                </div>
+            </section>
+            <section class="col-sm-6">
+                <div class="well"></div>
+            </section>
+            <section class="col-sm-6">
+                <div class="well"></div>
+            </section>
+            <section class="col-sm-6">
+                <div class="well"></div>
+            </section>
+            <section class="col-sm-6">
+                <div class="well"></div>
+            </section>
+            <section class="col-sm-6">
+                <div class="well"></div>
+            </section>
+            <section class="col-sm-6">
+                <div class="well"></div>
+            </section>
+            <section class="col-sm-6">
+                <div class="well"></div>
+            </section>
+            <section class="col-sm-6">
+                <div class="well"></div>
+            </section>
+        </article>
     </div>
     <script src="../../Scripts/jquery-2.0.3.js"></script>
     <script src="../../Scripts/bootstrap.js"></script>
+    <script src="../../Scripts/main.js"></script>
 </body>
 </html>

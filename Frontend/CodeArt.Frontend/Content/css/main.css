@@ -6,23 +6,138 @@
 .reset-padding-left {
     padding-left: 0;
 }
-/*Header*/
-body {
-    margin-top: 70px;
+
+.reset-padding-right {
+    padding-right: 0;
 }
 
-/*Register*/
-@media (min-width: 992px){
-    #register .modal-dialog {
-        width: 50%;
-        margin-top: 5%;
-    }
+.reset-margin-right {
+    margin-right: 0;
 }
-/*Profile*/
+
+.reset-margin-left {
+    margin-left: 0;
+}
+
+/*Header*/
+body {
+    margin-top: 80px;
+}
+
+.add-padding-left-header {
+    padding-left: 15px;
+}
+
 #header-search {
     margin-top: 10px;
 }
 
-.btn-custom-padding {
-    padding: 8px 12px;
+#menu > ul > li {
+    float: right;
+}
+
+    #menu > ul > li:first-child {
+        float: left;
+    }
+
+#menu .dropdown-menu {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+    #menu .dropdown-menu .divider {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #menu .dropdown-menu a {
+        padding-top: 9px;
+        padding-bottom: 9px;
+    }
+/*Register*/
+.add-padding-left-register-header {
+    padding-left: 18px;
+}
+
+@media(max-width: 240px) {
+    #menu > ul > li {
+        margin-right: 3px;
+    }
+
+        #menu > ul > li:nth-child(2) {
+            display: inline-block;
+            margin-right: 20px;
+        }
+}
+
+/*xs*/
+@media (min-width: 241px) and (max-width: 767px) {
+    /*Header*/
+    #menu > ul > li {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    /*Header*/
+    /*#menu ul > li > ul > li ,*/
+    #menu .dropdown-menu,
+    #menu .hide-toggle{
+        display: none;
+    }
+    #header-search input {
+        border-radius: 3px 0 0 3px;  
+    }
+
+    .btn-custom-header-collapsed {
+        padding: 6px 14px;
+        margin-top: 13px;
+    }
+
+}
+/*sm*/
+@media (min-width: 768px) {
+    .navbar .dropdown-menu::after {
+    position: absolute;
+    top: -6px;
+    display: inline-block;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid white;
+    border-left: 6px solid transparent;
+    content: '';
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+/*md*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    /*Register*/
+    #register .modal-dialog {
+        width: 80%;
+        margin-top: 5%;
+    }
+
+    .navbar .dropdown-menu::after {
+        left: 69%;
+    }
+}
+/*lg*/
+@media (min-width: 1200px) {
+    /*Header*/
+    #menu > ul > li:first-child {
+        margin-left: -35px;
+    }
+
+    .navbar .dropdown-menu::after {
+        right: 10%;
+    }
+
+    /*Register*/
+     #register .modal-dialog {
+        width: 50%;
+        margin-top: 5%;
+    }
+     /*Profile*/
 }
