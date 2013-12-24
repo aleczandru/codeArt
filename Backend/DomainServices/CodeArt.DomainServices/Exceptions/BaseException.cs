@@ -7,14 +7,6 @@ namespace CodeArt.DomainServices.Exceptions
         private readonly string message;
         private readonly int statusCode;
 
-        public int HttpStatusCode
-        {
-            get
-            {
-                return statusCode;
-            }
-        }
-
         public string ExceptionMessage
         {
             get
@@ -23,13 +15,19 @@ namespace CodeArt.DomainServices.Exceptions
             }
         }
 
-        public BaseException(string message, int statusCode)
+        public int ExceptionStatusCode
+        {
+            get
+            {
+                return statusCode;
+            }
+        }
+
+        public BaseException(int statusCode, string message)
             : base(message)
         {
             this.message = message;
             this.statusCode = statusCode;
         }
-
-
     }
 }
