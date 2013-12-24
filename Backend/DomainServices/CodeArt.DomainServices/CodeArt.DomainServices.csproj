@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="Config\DomainServicesDependencyConfig.cs" />
     <Compile Include="Config\DomainServicesMappingsConfig.cs" />
+    <Compile Include="Exceptions\BaseException.cs" />
     <Compile Include="MembershipContext\DbContext.cs" />
     <Compile Include="MembershipContext\UserModelStore.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

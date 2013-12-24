@@ -1,6 +1,8 @@
-﻿using System.Web.Http;
+﻿using System.Net;
+using System.Web.Http;
 using CodeArt.Common.ExtensionMethods;
 using CodeArt.DomainServices.Contracts.Models.Membership;
+using CodeArt.DomainServices.Exceptions;
 using CodeArt.WebApi.Attributes.ValidationAttribute;
 using Microsoft.AspNet.Identity;
 
