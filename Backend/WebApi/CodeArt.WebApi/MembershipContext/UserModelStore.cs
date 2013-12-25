@@ -5,7 +5,7 @@ using CodeArt.DomainServices.Contracts.MembershipContext;
 using CodeArt.DomainServices.Contracts.Models.Membership;
 using Microsoft.AspNet.Identity.EntityFramework;
 
-namespace CodeArt.DomainServices.MembershipContext
+namespace CodeArt.WebApi.MembershipContext
 {
     public class UserModelStore : UserStore<UserModel>
     {

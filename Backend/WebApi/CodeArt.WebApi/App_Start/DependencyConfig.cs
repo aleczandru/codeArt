@@ -3,7 +3,9 @@ using CodeArt.Common.Constants;
 using CodeArt.Common.Contracts.Wrappers;
 using CodeArt.Common.Wrappers;
 using CodeArt.DomainServices.Config;
+using CodeArt.DomainServices.Contracts.MembershipContext;
 using CodeArt.DomainServices.Contracts.Models.Membership;
+using CodeArt.WebApi.MembershipContext;
 using Microsoft.AspNet.Identity;
 
 namespace CodeArt.WebApi.App_Start
@@ -33,6 +35,8 @@ namespace CodeArt.WebApi.App_Start
         {
             DependencyContainer.RegisterType<UserManager<UserModel>, UserManager<UserModel>>();
             DependencyContainer.RegisterType<UserValidator<UserModel>, UserValidator<UserModel>>();
+            DependencyContainer.RegisterSingletonType<IDbContext, DbContext>();
+            DependencyContainer.RegisterType<IUserStore<UserModel>, UserModelStore>();
         }
     }
 }

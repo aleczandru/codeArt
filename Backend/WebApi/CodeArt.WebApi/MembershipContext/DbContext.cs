@@ -2,7 +2,7 @@
 using CodeArt.DomainServices.Contracts.Models.Membership;
 using Microsoft.AspNet.Identity.EntityFramework;
 
-namespace CodeArt.DomainServices.MembershipContext
+namespace CodeArt.WebApi.MembershipContext
 {
     public class DbContext : IdentityDbContext<UserModel>, IDbContext
     {
