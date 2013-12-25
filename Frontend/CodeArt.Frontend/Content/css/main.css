@@ -18,7 +18,22 @@
 .reset-margin-left {
     margin-left: 0;
 }
-
+.add-padding-top-bottom {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.add-margin-bottom {
+    margin-bottom: 15px;
+}
+.btn-edit {
+    padding: 4px 10px;    
+}
+.content-divider {
+    height: 1px;
+    background-color: #e3e3e3;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 /*Header*/
 body {
     margin-top: 80px;
