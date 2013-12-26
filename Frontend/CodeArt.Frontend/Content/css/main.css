@@ -2,7 +2,6 @@
 .overflow {
     overflow: hidden;
 }
-
 .reset-padding-left {
     padding-left: 0;
 }
@@ -11,8 +10,16 @@
     padding-right: 0;
 }
 
+.reset-padding-bottom {
+    padding-bottom: 0;
+}
+
 .reset-margin-right {
     margin-right: 0;
+}
+
+.reset-margin-bottom {
+    margin-bottom: 0;
 }
 
 .reset-margin-left {
@@ -34,6 +41,19 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.text-grey {
+    color: #666666;
+}
+
+.text-indent {
+    text-indent: 25px;
+}
+.text-justify {
+    text-align: justify;
+}
+/*.col-sm-6:nth-child(even) {
+float:right;
+}*/
 /*Header*/
 body {
     margin-top: 80px;
@@ -107,6 +127,12 @@ body {
     .btn-custom-header-collapsed {
         padding: 6px 14px;
         margin-top: 13px;
+    }
+    .xs-reset-paddng-left {
+        padding-left: 0;
+    }
+    .xs-add-margin-bottom {
+        margin-bottom: 15px;
     }
 
 }
