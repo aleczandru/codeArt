@@ -2,6 +2,7 @@
 .overflow {
     overflow: hidden;
 }
+
 .reset-padding-left {
     padding-left: 0;
 }
@@ -25,22 +26,25 @@
 .reset-margin-left {
     margin-left: 0;
 }
-.add-padding-top-bottom {
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
+
 .add-margin-bottom {
     margin-bottom: 15px;
 }
-.btn-edit {
-    padding: 4px 10px;    
+.add-small-margin-left {
+    margin-left: 5px;
 }
+
+.btn-edit {
+    padding: 4px 10px;
+}
+
 .content-divider {
     height: 1px;
     background-color: #e3e3e3;
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 .text-grey {
     color: #666666;
 }
@@ -48,12 +52,12 @@
 .text-indent {
     text-indent: 25px;
 }
+
 .text-justify {
     text-align: justify;
 }
-/*.col-sm-6:nth-child(even) {
-float:right;
-}*/
+
+
 /*Header*/
 body {
     margin-top: 80px;
@@ -115,42 +119,42 @@ body {
 
 @media (max-width: 767px) {
     /*Header*/
-    /*#menu ul > li > ul > li ,*/
     #menu .dropdown-menu,
-    #menu .hide-toggle{
+    #menu .hide-toggle {
         display: none;
     }
+
     #header-search input {
-        border-radius: 3px 0 0 3px;  
+        border-radius: 3px 0 0 3px;
     }
 
     .btn-custom-header-collapsed {
         padding: 6px 14px;
         margin-top: 13px;
     }
+
     .xs-reset-paddng-left {
         padding-left: 0;
     }
+
     .xs-add-margin-bottom {
         margin-bottom: 15px;
     }
-
 }
 /*sm*/
 @media (min-width: 768px) {
     .navbar .dropdown-menu::after {
-    position: absolute;
-    top: -6px;
-    display: inline-block;
-    border-right: 6px solid transparent;
-    border-bottom: 6px solid white;
-    border-left: 6px solid transparent;
-    content: '';
-}
+        position: absolute;
+        top: -6px;
+        display: inline-block;
+        border-right: 6px solid transparent;
+        border-bottom: 6px solid white;
+        border-left: 6px solid transparent;
+        content: '';
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-
 }
 /*md*/
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -176,9 +180,8 @@ body {
     }
 
     /*Register*/
-     #register .modal-dialog {
+    #register .modal-dialog {
         width: 50%;
         margin-top: 5%;
     }
-     /*Profile*/
 }
