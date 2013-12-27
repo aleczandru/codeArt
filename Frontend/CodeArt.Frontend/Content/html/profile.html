@@ -100,7 +100,7 @@
                 </div>
             </div>
         </header>
-        <article class="container reset-padding-left reset-padding-right">
+        <article class="container reset-padding-left reset-padding-right" id="profile-container">
             <section class="col-sm-12">
                 <div class="well overflow reset-padding-left reset-padding-right">
                     <div class="col-xs-12 col-sm-6">
@@ -697,16 +697,73 @@
                         <a class="btn btn-primary btn-edit">Add Skill</a>
                     </div>
                 </div>
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal fade" id="myModal" tabindex="-1">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                                <h4 class="modal-title" id="myModalLabel"><strong>Endorsers </strong></h4><em>3 people have endorsed you</em>
                             </div>
-                            <div class="modal-body">
-                                <div>
-                                    <img src="../images/avatar.png" alt="avatar"/>
+                            <div class="modal-body reset-padding-bottom">
+                                <div class="row">
+                                    <div class="col-xs-5 col-sm-2">
+                                        <img src="../images/avatar.png" class="thumbnail thumbnail-size" alt="avatar" />
+                                    </div>
+                                    <div class="col-xs-7 col-sm-10">
+                                        <p class="sm-add-padding-left"><a href="">Nistor Alexandru</a></p>
+                                        <p class="sm-add-padding-left"><small>Developer</small></p>
+                                        <p class="sm-add-padding-left"><small>Cluj-Napoca, Romania</small></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-5 col-sm-2">
+                                        <img src="../images/avatar.png" class="thumbnail thumbnail-size" alt="avatar" />
+                                    </div>
+                                    <div class="col-xs-7 col-sm-10">
+                                        <p class="sm-add-padding-left"><a href="">Nistor Alexandru</a></p>
+                                        <p class="sm-add-padding-left"><small>Developer</small></p>
+                                        <p class="sm-add-padding-left"><small>Cluj-Napoca, Romania</small></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-5 col-sm-2">
+                                        <img src="../images/avatar.png" class="thumbnail thumbnail-size" alt="avatar" />
+                                    </div>
+                                    <div class="col-xs-7 col-sm-10">
+                                        <p class="sm-add-padding-left"><a href="">Nistor Alexandru</a></p>
+                                        <p class="sm-add-padding-left"><small>Developer</small></p>
+                                        <p class="sm-add-padding-left"><small>Cluj-Napoca, Romania</small></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-5 col-sm-2">
+                                        <img src="../images/avatar.png" class="thumbnail thumbnail-size" alt="avatar" />
+                                    </div>
+                                    <div class="col-xs-7 col-sm-10">
+                                        <p class="sm-add-padding-left"><a href="">Nistor Alexandru</a></p>
+                                        <p class="sm-add-padding-left"><small>Developer</small></p>
+                                        <p class="sm-add-padding-left"><small>Cluj-Napoca, Romania</small></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-5 col-sm-2">
+                                        <img src="../images/avatar.png" class="thumbnail thumbnail-size" alt="avatar" />
+                                    </div>
+                                    <div class="col-xs-7 col-sm-10">
+                                        <p class="sm-add-padding-left"><a href="">Nistor Alexandru</a></p>
+                                        <p class="sm-add-padding-left"><small>Developer</small></p>
+                                        <p class="sm-add-padding-left"><small>Cluj-Napoca, Romania</small></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-5 col-sm-2">
+                                        <img src="../images/avatar.png" class="thumbnail thumbnail-size" alt="avatar" />
+                                    </div>
+                                    <div class="col-xs-7 col-sm-10">
+                                        <p class="sm-add-padding-left"><a href="">Nistor Alexandru</a></p>
+                                        <p class="sm-add-padding-left"><small>Developer</small></p>
+                                        <p class="sm-add-padding-left"><small>Cluj-Napoca, Romania</small></p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="modal-footer">
@@ -734,6 +791,131 @@
                         </div>
                         <div class="col-xs-3 reset-padding-left reset-padding-right">
                             <a class="btn btn-primary btn-edit" id="technology-button">Add Skill</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="col-sm-6 pull-right">
+                <div class="well overflow">
+                    <div class="col-xs-8 reset-padding-left">
+                        <h5><strong>Contact</strong></h5>
+                    </div>
+                    <div class="col-xs-4 text-right reset-padding-right">
+                        <a class="btn btn-primary btn-edit"><i class="fa fa-pencil"></i> Edit</a>
+                    </div>
+                    <div class="col-xs-12 content-divider"></div>
+                    <div class="col-xs-12 reset-padding-left">
+                        <div class="col-xs-4 col-sm-3 reset-padding-left">
+                            <span>Address</span>
+                        </div>
+                        <div class="col-xs-8 col-sm-9 reset-padding-right">
+                            <p>Energiei, 33, D, apartament 20</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 reset-padding-left">
+                        <div class="col-xs-4 col-sm-3 reset-padding-left">
+                            <span>Phone Number</span>
+                        </div>
+                        <div class="col-xs-8 col-sm-9 reset-padding-right">
+                            <p>0743858726</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 reset-padding-left">
+                        <div class="col-xs-4 col-sm-3 reset-padding-left">
+                            <span>Web Address</span>
+                        </div>
+                        <div class="col-xs-8 col-sm-9 reset-padding-right">
+                            <a href="http://getbootstrap.com/javascript/#mdo">http://getbootstrap.com/javascript/#mdo</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="col-sm-6">
+                <div class="well overflow">
+                    <div class="col-xs-8 reset-padding-left">
+                        <h5><strong>Contact</strong></h5>
+                    </div>
+                    <div class="col-xs-4 text-right reset-padding-right">
+                        <a class="btn btn-primary btn-edit"><i class="fa fa-save"></i> Save</a>
+                    </div>
+                    <div class="col-xs-12 content-divider"></div>
+                    <div class="col-xs-12 reset-padding-left reset-padding-right add-margin-bottom">
+                        <div class="col-sm-3 reset-padding-left xs-add-margin-bottom">
+                            <span>Address</span>
+                        </div>
+                        <div class="col-sm-9 reset-padding-right xs-reset-paddng-left">
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 reset-padding-left reset-padding-right add-margin-bottom">
+                        <div class="col-sm-3 reset-padding-left xs-add-margin-bottom">
+                            <span>Phone Number</span>
+                        </div>
+                        <div class="col-sm-9 reset-padding-right xs-reset-paddng-left">
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 reset-padding-left reset-padding-right add-margin-bottom">
+                        <div class="col-sm-3 reset-padding-left xs-add-margin-bottom">
+                            <span>Web Address</span>
+                        </div>
+                        <div class="col-sm-9 reset-padding-right xs-reset-paddng-left">
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="col-sm-6 pull-right">
+                <div class="well overflow">
+                    <div class="col-xs-8 reset-padding-left">
+                        <h5><strong>Interests</strong></h5>
+                    </div>
+                    <div class="col-xs-4 text-right reset-padding-right">
+                        <a class="btn btn-primary btn-edit"><i class="fa fa-pencil"></i> Edit</a>
+                    </div>
+                    <div class="col-xs-12 content-divider"></div>
+                    <div class="col-xs-12 reset-padding-left">
+                        <ul class="list-inline pull-left reset-margin-bottom">
+                            <li class="add-margin-bottom add-small-margin-left"><span class="label label-info">C#</span></li>
+                            <li class="add-margin-bottom"><span class="label label-info">ASP.NET</span></li>
+                            <li class="add-margin-bottom"><span class="label label-info">PHP</span></li>
+                            <li class="add-margin-bottom"><span class="label label-info">Java</span></li>
+                            <li class="add-margin-bottom"><span class="label label-info">C</span></li>
+                            <li class="add-margin-bottom"><span class="label label-info">C++</span></li>
+                            <li class="add-margin-bottom"><span class="label label-info">Entity Framework</span></li>
+                            <li class="add-margin-bottom"><span class="label label-info">LINQ</span></li>
+                            <li class="add-margin-bottom"><span class="label label-info">SQL</span></li>
+                            <li class="add-margin-bottom"><span class="label label-info">ASP.NET</span></li>
+                            <li class="add-margin-bottom"><span class="label label-info">PHP</span></li>
+                            <li class="add-margin-bottom"><span class="label label-info">Java</span></li>
+                            <li class="add-margin-bottom"><span class="label label-info">C</span></li>
+                            <li class="add-margin-bottom"><span class="label label-info">C++</span></li>
+                            <li class="add-margin-bottom"><span class="label label-info">Entity Framework</span></li>
+                            <li class="add-margin-bottom"><span class="label label-info">LINQ</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 content-divider"></div>
+                </div>
+            </section>
+            <section class="col-sm-6">
+                <div class="well overflow">
+                    <div class="col-xs-8 reset-padding-left">
+                        <h5><strong>Interests</strong></h5>
+                    </div>
+                    <div class="col-xs-4 text-right reset-padding-right">
+                        <a class="btn btn-primary btn-edit"><i class="fa fa-save"></i> Save</a>
+                    </div>
+                    <div class="col-xs-12 content-divider"></div>
+                    <div class="col-xs-12 reset-padding-left reset-padding-right">
+                        <div class="col-xs-12 reset-padding-right reset-padding-left add-margin-bottom">
+                            <input type="text" class="form-control" id="technology-input" />
+                        </div>
+                        <div class="col-xs-12 reset-padding-left reset-padding-right add-margin-bottom">
+                            <select multiple class="form-control" id="technology-multiline-select" disabled="disabled"></select>
+                        </div>
+                        <div class="col-xs-12 reset-padding-left reset-padding-right">
+                            <a class="btn btn-primary btn-edit pull-left" id="technology-button">Add Interest</a>
+                            <a class="btn btn-primary btn-edit pull-right" id="technology-button">Remove Interest</a>                        
                         </div>
                     </div>
                 </div>
