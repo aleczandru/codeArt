@@ -161,7 +161,6 @@ body {
     /*Register*/
     #register .modal-dialog {
         width: 80%;
-        margin-top: 5%;
     }
 
     .navbar .dropdown-menu::after {
@@ -182,6 +181,5 @@ body {
     /*Register*/
     #register .modal-dialog {
         width: 50%;
-        margin-top: 5%;
     }
 }
