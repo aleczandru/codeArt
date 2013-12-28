@@ -1,4 +1,5 @@
 ﻿$(function() {
+    //
     var technologyButton = $("#technology-button");
     var technologyInput = $("#technology-input");
     var technologyMultilineSelect = $("#technology-multiline-select");

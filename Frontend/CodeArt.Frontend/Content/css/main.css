@@ -226,11 +226,6 @@ body {
 }
 /*md*/
 @media (min-width: 992px) and (max-width: 1199px) {
-    /*Register*/
-    #register .modal-dialog {
-        width: 80%;
-    }
-
     .navbar .dropdown-menu::after {
         left: 69%;
     }
@@ -244,10 +239,5 @@ body {
 
     .navbar .dropdown-menu::after {
         right: 10%;
-    }
-
-    /*Register*/
-    #register .modal-dialog {
-        width: 50%;
     }
 }
