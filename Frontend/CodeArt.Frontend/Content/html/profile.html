@@ -101,14 +101,23 @@
             </div>
         </header>
         <article class="container reset-padding-left reset-padding-right" id="profile-container">
-            <section class="col-sm-12">
-                <div class="well overflow reset-padding-left reset-padding-right">
-                    <div class="col-xs-12 col-sm-6">
+            <header class="col-sm-12" id="container-header">
+                <div class="well overflow reset-padding">
+                    <div class="col-xs-12 col-sm-4 col-md-3 text-center add-padding-top container-header-user-details">
                         <p><img src="../images/avatar.png" alt="avatar" class="img-thumbnail img-responsive" /></p>
-                        <p class="text-center"><strong>Nistor Alexandru</strong></p>
+                        <p class="text-center reset-margin-bottom"><strong><a href="#" class="text-white">Nistor Alexandru</a></strong></p>
+                        <p class="reset-margin-bottom"><small>Worked at ISDC</small></p>
+                        <p class="reset-margin-bottom"><small>Attended University Vasile Alecsandri</small></p>
+                        <p><small>Lives in Romania , Cluj-Napoca</small></p>
+                    </div>
+                    <div class="hidden-xs col-sm-8 col-md-9 container-header-menu">
+                        <ul class="list-inline">
+                            <li class="pull-right"><a class=" btn btn-primary btn-sm">Update Cover</a></li>
+                            <li class ="pull-right"><a class="btn btn-primary btn-sm">Download CV</a></li>
+                        </ul>
                     </div>
                 </div>
-            </section>
+            </header>
 
             <section class="col-sm-6 pull-right">
                 <div class="well overflow">
@@ -116,7 +125,7 @@
                         <h5><strong>About Me</strong></h5>
                     </div>
                     <div class="col-xs-4 text-right reset-padding-right">
-                        <a class="btn btn-primary btn-edit"><i class="fa fa-pencil"></i> Edit</a>
+                        <a class="btn btn-primary btn-sm"><i class="fa fa-pencil"></i> Edit</a>
                     </div>
                     <div class="col-xs-12 content-divider"></div>
                     <div class="col-xs-12 reset-padding-left">
@@ -151,7 +160,7 @@
                         <h5><strong>About Me</strong></h5>
                     </div>
                     <div class="col-xs-4 text-right reset-padding-right">
-                        <a class="btn btn-primary btn-edit"><i class="fa fa-save"></i> Save</a>
+                        <a class="btn btn-primary btn-sm"><i class="fa fa-save"></i> Save</a>
                     </div>
                     <div class="col-xs-12 content-divider"></div>
                     <div class="col-xs-12 reset-padding-left reset-padding-right">
@@ -221,7 +230,7 @@
                         <h5><strong>Education</strong></h5>
                     </div>
                     <div class="col-xs-4 text-right reset-padding-right">
-                        <a class="btn btn-primary btn-edit"><i class="fa fa-pencil"></i> Edit</a>
+                        <a class="btn btn-primary btn-sm"><i class="fa fa-pencil"></i> Edit</a>
                     </div>
                     <div class="col-xs-12 content-divider"></div>
                     <div class="col-xs-12 reset-padding-left">
@@ -246,7 +255,7 @@
                         <p><small>2009 - In progress</small></p>
                     </div>
                     <div class="col-xs-12 reset-padding-right text-right">
-                        <a class="btn btn-primary btn-edit">Add Education</a>
+                        <a class="btn btn-primary btn-sm">Add Education</a>
                     </div>
                 </div>
             </section>
@@ -256,7 +265,7 @@
                         <h5><strong>Education</strong></h5>
                     </div>
                     <div class="col-xs-4 text-right reset-padding-right">
-                        <a class="btn btn-primary btn-edit"><i class="fa fa-save"></i> Save</a>
+                        <a class="btn btn-primary btn-sm"><i class="fa fa-save"></i> Save</a>
                     </div>
                     <div class="col-xs-12 content-divider"></div>
                     <div class="col-xs-12 alert alert-dismissable alert-danger">
@@ -357,7 +366,7 @@
                         <h5><strong>Work Experience</strong></h5>
                     </div>
                     <div class="col-xs-4 text-right reset-padding-right">
-                        <a class="btn btn-primary btn-edit"><i class="fa fa-pencil"></i> Edit</a>
+                        <a class="btn btn-primary btn-sm"><i class="fa fa-pencil"></i> Edit</a>
                     </div>
                     <div class="col-xs-12 content-divider"></div>
                     <div class="col-xs-12 reset-padding-left">
@@ -376,7 +385,7 @@
                         <p class="text-grey text-justify text-indent">Lorem Ipsum este pur şi simplu o machetă pentru text a industriei tipografice. Lorem Ipsum a fost macheta standard a industriei încă din secolul al XVI-lea, când un tipograf anonim a luat o planşetă de litere şi le-a amestecat pentru a crea o carte demonstrativă pentru literele respective. Nu doar că a supravieţuit timp de cinci secole, dar şi a facut saltul în tipografia electronică practic neschimbată. A fost popularizată în anii '60 odată cu ieşirea colilor Letraset care conţineau pasaje Lorem Ipsum, iar mai recent, prin programele de publicare pentru calculator, ca Aldus PageMaker care includeau versiuni de Lorem Ipsum.</p>
                     </div>
                     <div class="col-xs-12 reset-padding-right text-right">
-                        <a class="btn btn-primary btn-edit">Add Position</a>
+                        <a class="btn btn-primary btn-sm">Add Position</a>
                     </div>
                 </div>
             </section>
@@ -386,7 +395,7 @@
                         <h5><strong>Work Experience</strong></h5>
                     </div>
                     <div class="col-xs-4 text-right reset-padding-right">
-                        <a class="btn btn-primary btn-edit"><i class="fa fa-save"></i> Save</a>
+                        <a class="btn btn-primary btn-sm"><i class="fa fa-save"></i> Save</a>
                     </div>
                     <div class="col-xs-12 content-divider"></div>
                     <div class="col-xs-12 alert alert-dismissable alert-danger">
@@ -490,7 +499,7 @@
                         <h5><strong>Projects</strong></h5>
                     </div>
                     <div class="col-xs-4 text-right reset-padding-right">
-                        <a class="btn btn-primary btn-edit"><i class="fa fa-pencil"></i> Edit</a>
+                        <a class="btn btn-primary btn-sm"><i class="fa fa-pencil"></i> Edit</a>
                     </div>
                     <div class="col-xs-12 content-divider"></div>
                     <div class="col-xs-12 reset-padding-left">
@@ -546,7 +555,7 @@
                     </div>
                     <div class="col-xs-12 content-divider"></div>
                     <div class="col-xs-12 reset-padding-right text-right">
-                        <a class="btn btn-primary btn-edit">Add Project</a>
+                        <a class="btn btn-primary btn-sm">Add Project</a>
                     </div>
                 </div>
             </section>
@@ -556,7 +565,7 @@
                         <h5><strong>Projects</strong></h5>
                     </div>
                     <div class="col-xs-4 text-right reset-padding-right">
-                        <a class="btn btn-primary btn-edit"><i class="fa fa-save"></i> Save</a>
+                        <a class="btn btn-primary btn-sm"><i class="fa fa-save"></i> Save</a>
                     </div>
                     <div class="col-xs-12 content-divider"></div>
                     <div class="col-xs-12 reset-padding-left reset-padding-right add-margin-bottom">
@@ -640,7 +649,7 @@
                             <select multiple class="form-control" id="technology-multiline-select" disabled="disabled"></select>
                         </div>
                         <div class="col-xs-3 reset-padding-left reset-padding-right">
-                            <a class="btn btn-primary btn-edit" id="technology-button">Add Technology</a>
+                            <a class="btn btn-primary btn-sm" id="technology-button">Add Technology</a>
                         </div>
                     </div>
                 </div>
@@ -651,7 +660,7 @@
                         <h5><strong>Skills & Expertise</strong></h5>
                     </div>
                     <div class="col-xs-4 text-right reset-padding-right">
-                        <a class="btn btn-primary btn-edit"><i class="fa fa-pencil"></i> Edit</a>
+                        <a class="btn btn-primary btn-sm"><i class="fa fa-pencil"></i> Edit</a>
                     </div>
                     <div class="col-xs-12 content-divider"></div>
                     <div class="col-xs-12 reset-padding-left reset-padding-right">
@@ -694,7 +703,7 @@
                     </div>
                     <div class="col-xs-12 content-divider"></div>
                     <div class="col-xs-12 reset-padding-right text-right">
-                        <a class="btn btn-primary btn-edit">Add Skill</a>
+                        <a class="btn btn-primary btn-sm">Add Skill</a>
                     </div>
                 </div>
                 <div class="modal fade" id="myModal" tabindex="-1">
@@ -779,7 +788,7 @@
                         <h5><strong>Skills & Expertise</strong></h5>
                     </div>
                     <div class="col-xs-4 text-right reset-padding-right">
-                        <a class="btn btn-primary btn-edit"><i class="fa fa-save"></i> Save</a>
+                        <a class="btn btn-primary btn-sm"><i class="fa fa-save"></i> Save</a>
                     </div>
                     <div class="col-xs-12 content-divider"></div>
                     <div class="col-xs-12 reset-padding-left reset-padding-right">
@@ -790,7 +799,7 @@
                             <select multiple class="form-control" id="technology-multiline-select" disabled="disabled"></select>
                         </div>
                         <div class="col-xs-3 reset-padding-left reset-padding-right">
-                            <a class="btn btn-primary btn-edit" id="technology-button">Add Skill</a>
+                            <a class="btn btn-primary btn-sm" id="technology-button">Add Skill</a>
                         </div>
                     </div>
                 </div>
@@ -801,7 +810,7 @@
                         <h5><strong>Contact</strong></h5>
                     </div>
                     <div class="col-xs-4 text-right reset-padding-right">
-                        <a class="btn btn-primary btn-edit"><i class="fa fa-pencil"></i> Edit</a>
+                        <a class="btn btn-primary btn-sm"><i class="fa fa-pencil"></i> Edit</a>
                     </div>
                     <div class="col-xs-12 content-divider"></div>
                     <div class="col-xs-12 reset-padding-left">
@@ -836,7 +845,7 @@
                         <h5><strong>Contact</strong></h5>
                     </div>
                     <div class="col-xs-4 text-right reset-padding-right">
-                        <a class="btn btn-primary btn-edit"><i class="fa fa-save"></i> Save</a>
+                        <a class="btn btn-primary btn-sm"><i class="fa fa-save"></i> Save</a>
                     </div>
                     <div class="col-xs-12 content-divider"></div>
                     <div class="col-xs-12 reset-padding-left reset-padding-right add-margin-bottom">
@@ -871,7 +880,7 @@
                         <h5><strong>Interests</strong></h5>
                     </div>
                     <div class="col-xs-4 text-right reset-padding-right">
-                        <a class="btn btn-primary btn-edit"><i class="fa fa-pencil"></i> Edit</a>
+                        <a class="btn btn-primary btn-sm"><i class="fa fa-pencil"></i> Edit</a>
                     </div>
                     <div class="col-xs-12 content-divider"></div>
                     <div class="col-xs-12 reset-padding-left">
@@ -903,7 +912,7 @@
                         <h5><strong>Interests</strong></h5>
                     </div>
                     <div class="col-xs-4 text-right reset-padding-right">
-                        <a class="btn btn-primary btn-edit"><i class="fa fa-save"></i> Save</a>
+                        <a class="btn btn-primary btn-sm"><i class="fa fa-save"></i> Save</a>
                     </div>
                     <div class="col-xs-12 content-divider"></div>
                     <div class="col-xs-12 reset-padding-left reset-padding-right">
@@ -914,8 +923,8 @@
                             <select multiple class="form-control" id="technology-multiline-select" disabled="disabled"></select>
                         </div>
                         <div class="col-xs-12 reset-padding-left reset-padding-right">
-                            <a class="btn btn-primary btn-edit pull-left" id="technology-button">Add Interest</a>
-                            <a class="btn btn-primary btn-edit pull-right" id="technology-button">Remove Interest</a>                        
+                            <a class="btn btn-primary btn-sm pull-left" id="technology-button">Add Interest</a>
+                            <a class="btn btn-primary btn-sm pull-right" id="technology-button">Remove Interest</a>                        
                         </div>
                     </div>
                 </div>

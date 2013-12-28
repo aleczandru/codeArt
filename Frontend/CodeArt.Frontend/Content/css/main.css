@@ -15,6 +15,14 @@
     padding-bottom: 0;
 }
 
+.reset-padding {
+    padding: 0;
+}
+
+.reset-padding-top {
+    padding-top: 0;
+}
+
 .reset-margin-right {
     margin-right: 0;
 }
@@ -31,6 +39,10 @@
     margin-bottom: 0;
 }
 
+.reset-margin-top {
+    margin-top: 0;
+}
+
 .add-margin-bottom {
     margin-bottom: 15px;
 }
@@ -43,12 +55,12 @@
     padding-left: 15px;
 }
 
-.add-small-margin-left {
-    margin-left: 5px;
+.add-padding-top {
+    padding-top: 15px;
 }
 
-.btn-edit {
-    padding: 4px 10px;
+.add-small-margin-left {
+    margin-left: 5px;
 }
 
 .content-divider {
@@ -61,7 +73,15 @@
 .text-grey {
     color: #666666;
 }
-
+.text-grey:hover {
+    color: #666666;
+}
+.text-white {
+    color: white;
+}
+.text-white:hover {
+    color: white;    
+}
 .text-indent {
     text-indent: 25px;
 }
@@ -109,6 +129,31 @@ body {
         padding-top: 9px;
         padding-bottom: 9px;
     }
+
+#container-header {
+    position: relative;
+}
+
+#container-header > div {
+    background-image: url('../images/background.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+
+.container-header-user-details {
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+    background-image: -webkit-linear-gradient(#6d94bf, #446e9b 50%, #3e648d);
+    background-image: linear-gradient(#6d94bf, #446e9b 50%, #3e648d);
+    background-repeat: no-repeat;
+    border: 1px solid #345578;
+    color: white;
+}
+.container-header-menu {
+    position: absolute; 
+    right: 10px;
+    bottom: 35px;
+}
 /*Register*/
 .add-padding-left-register-header {
     padding-left: 18px;

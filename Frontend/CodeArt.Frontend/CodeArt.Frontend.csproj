@@ -98,7 +98,9 @@
     <Content Include="Content\css\main.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\html\profile.html" />
+    <Content Include="Content\html\test.html" />
     <Content Include="Content\images\avatar.png" />
+    <Content Include="Content\images\background.png" />
     <Content Include="Content\images\error.png" />
     <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\ok.png" />
